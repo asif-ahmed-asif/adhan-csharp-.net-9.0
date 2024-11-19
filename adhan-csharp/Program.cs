@@ -10,7 +10,7 @@ namespace adhan_csharp
         {
             Coordinates coordinates = new Coordinates(40.7128, -74.0060);
             DateComponents dateComponents = DateComponents.From(DateTime.Now);
-            CalculationParameters parameters = CalculationMethod.EGYPTIAN.GetParameters();
+            CalculationParameters parameters = CalculationMethod.NORTH_AMERICA.GetParameters();
 
             string timeZone = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ?
                 "Eastern Standard Time" : "America/New_York";
